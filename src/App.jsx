@@ -16,7 +16,7 @@ function App() {
 
     console.log(data);
 
-    fetch("http://localhost:3001/enviarcorreo", {
+    fetch("http://localhost:3002/enviarcorreo", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
