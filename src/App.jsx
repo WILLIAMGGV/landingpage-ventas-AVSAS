@@ -25,11 +25,11 @@ function App() {
     })
       .then((response) => response.json())
       .then((result) => {
-        if(result.message){
+    
           document.getElementById("gracias").innerHTML = "Gracias por Registrarte..."
            document.getElementById("gracias2").innerHTML = "Puedes abrir el documento <a class='text-blue-400 cursor-pointer' href='https://docs.google.com/presentation/d/1UjdnzDRvBLJktn4Cx5Q8-6p2jydxQwvPEBNqae1DaVo/edit?usp=drive_web' target='_blanck'> AQUI </a> si no abre automaticamente"
           window.open("https://docs.google.com/presentation/d/1UjdnzDRvBLJktn4Cx5Q8-6p2jydxQwvPEBNqae1DaVo/edit?usp=drive_web", "_blank");
-        }
+   
       })
       .catch((error) => {
         console.log(error);
