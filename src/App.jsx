@@ -16,7 +16,7 @@ function App() {
 
     console.log(data);
 
-    fetch("http://localhost:3002/enviarcorreo", {
+    fetch("https://avca.bingoarcoiris.com/enviarcorreo", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
