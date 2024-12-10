@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9d7c1edd.css",
+    "main.js": "/static/js/main.6acbcc02.js",
+    "static/media/png-01.png": "/static/media/png-01.9bdb58c15ce8abbe5738.png",
+    "static/media/png-07.png": "/static/media/png-07.6c6ff74c5c11b8ff4e7f.png",
+    "static/media/png-09.png": "/static/media/png-09.c3edf6188e257e6d1c45.png",
+    "static/media/png-03.png": "/static/media/png-03.79ee3c4a66821c06e110.png",
+    "static/media/png-04.png": "/static/media/png-04.fadb5ab863b3185a4033.png",
+    "static/media/Pangram-ExtraBold.otf": "/static/media/Pangram-ExtraBold.f08b2422d708b45f17fe.otf",
+    "static/media/Pangram-Bold.otf": "/static/media/Pangram-Bold.da4d24160c8050a3624f.otf",
+    "static/media/Pangram-Black.otf": "/static/media/Pangram-Black.1a8e207ff02f99fdd44a.otf",
+    "static/media/Pangram-Light.otf": "/static/media/Pangram-Light.fd72ed3df65b680df230.otf",
+    "static/media/Pangram-Medium.otf": "/static/media/Pangram-Medium.a8580b7adf5a606cfe9e.otf",
+    "static/media/Pangram-ExtraLight.otf": "/static/media/Pangram-ExtraLight.e485fe7b8a04842e0d7e.otf",
+    "static/media/Pangram-Regular.otf": "/static/media/Pangram-Regular.6ca45f20a715dc9973b6.otf",
+    "index.html": "/index.html",
+    "main.9d7c1edd.css.map": "/static/css/main.9d7c1edd.css.map",
+    "main.6acbcc02.js.map": "/static/js/main.6acbcc02.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9d7c1edd.css",
+    "static/js/main.6acbcc02.js"
+  ]
+}
