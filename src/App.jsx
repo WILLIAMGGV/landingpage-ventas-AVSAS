@@ -83,7 +83,7 @@ function App() {
             </div>
             <div className="w-full pr-10 ">
               <input
-                className="h-10 m-4 border-b-4 focus:outline-none focus:ring-0 sm:text-[34px] text-[18px] text-center border-gray-900 text-[#4741f2] rounded-sm  w-full"
+                className="h-10 m-4 border-b-4 focus:outline-none focus:ring-0 sm:text-[34px] text-[18px] pl-4 border-gray-900 text-[#4741f2] rounded-sm  w-full"
                 type="text"
                 id="nombre"
                 name="nombre"
@@ -108,7 +108,7 @@ function App() {
             </div>
             <div className="w-full pr-10 ">
               <input
-                className="h-10 m-4 border-b-4 focus:outline-none focus:ring-0 sm:text-[34px] text-[18px] text-center border-gray-900 text-[#4741f2] rounded-sm  w-full"
+                className="h-10 m-4 border-b-4 focus:outline-none focus:ring-0 sm:text-[34px] text-[18px] pl-4 border-gray-900 text-[#4741f2] rounded-sm  w-full"
                 type="text"
                 id="apellido"
                 name="apellido"
@@ -133,7 +133,7 @@ function App() {
             </div>
             <div className="w-full pr-10 ">
               <input
-                className="h-10 m-4 border-b-4 focus:outline-none focus:ring-0 sm:text-[34px] text-[18px] text-center border-gray-900 text-[#4741f2] rounded-sm  w-full"
+                className="h-10 m-4 border-b-4 focus:outline-none focus:ring-0 sm:text-[34px] text-[18px] pl-4 border-gray-900 text-[#4741f2] rounded-sm  w-full"
                 type="text"
                 id="telefono"
                 name="telefono"
@@ -158,7 +158,7 @@ function App() {
             </div>
             <div className="w-full pr-10 ">
               <input
-                className="h-10 m-4 border-b-4 focus:outline-none focus:ring-0 text-[18px] text-center border-gray-900 text-[#4741f2] rounded-sm w-full"
+                className="h-10 m-4 border-b-4 pl-4 focus:outline-none focus:ring-0 text-[18px] border-gray-900 text-[#4741f2] rounded-sm w-full"
                 type="text"
                 id="email"
                 name="email"
