@@ -62,8 +62,133 @@ function App() {
 
 
     <div className="flex flex-row place-content-center mt-16">
-    <div className="flex flex-col sm:flex-row sm:place-content-center place-content-center">
-          <img src={logo} className="sm:w-auto w-[60%] ml-16 sm:ml-0" />
+
+      <table width="80%">
+        <tr>
+          <td valign="top">
+            <br />
+            <br />
+          <img src={logo}  />
+          </td>
+          <td valign="top">
+          <div className="mt-4 ml-8 flex flex-row">
+            <div
+              className="p-4 bg-[#0cf29e] w-[140px]  sm:w-[240px] text-center text-[22px] sm:text-[32px] text-[#5d43ff] rounded-full"
+              style={{
+                fontFamily: "pextrabold",
+                lineHeight: 1,
+              }}
+            >
+              Nombre:
+            </div>
+            <div className="w-full pr-10 ">
+              <input
+                className="h-10 m-4 border-b-4 focus:outline-none focus:ring-0 sm:text-[34px] text-[18px] text-center border-gray-900 text-[#4741f2] rounded-sm  w-full"
+                type="text"
+                id="nombre"
+                name="nombre"
+                defaultValue=""
+                style={{
+                  fontFamily: "pbold",
+                  lineHeight: 1,
+                  letterSpacing: "2px",
+                }}
+              />
+            </div>
+          </div>
+          <div className="mt-4 ml-8 flex flex-row">
+            <div
+              className="p-4 bg-[#0cf29e] w-[140px]  sm:w-[240px] text-center text-[22px] sm:text-[32px] text-[#5d43ff] rounded-full"
+              style={{
+                fontFamily: "pextrabold",
+                lineHeight: 1,
+              }}
+            >
+              Apellido:
+            </div>
+            <div className="w-full pr-10 ">
+              <input
+                className="h-10 m-4 border-b-4 focus:outline-none focus:ring-0 sm:text-[34px] text-[18px] text-center border-gray-900 text-[#4741f2] rounded-sm  w-full"
+                type="text"
+                id="apellido"
+                name="apellido"
+                defaultValue=""
+                style={{
+                  fontFamily: "pbold",
+                  lineHeight: 1,
+                  letterSpacing: "2px",
+                }}
+              />
+            </div>
+          </div>
+          <div className="mt-4 ml-8 flex flex-row">
+            <div
+              className="p-4 bg-[#0cf29e] w-[140px]  sm:w-[240px] text-center text-[22px] sm:text-[32px] text-[#5d43ff] rounded-full"
+              style={{
+                fontFamily: "pextrabold",
+                lineHeight: 1,
+              }}
+            >
+              Telefono:
+            </div>
+            <div className="w-full pr-10 ">
+              <input
+                className="h-10 m-4 border-b-4 focus:outline-none focus:ring-0 sm:text-[34px] text-[18px] text-center border-gray-900 text-[#4741f2] rounded-sm  w-full"
+                type="text"
+                id="telefono"
+                name="telefono"
+                defaultValue=""
+                style={{
+                  fontFamily: "pbold",
+                  lineHeight: 1,
+                  letterSpacing: "2px",
+                }}
+              />
+            </div>
+          </div>
+          <div className="mt-4 ml-8 flex flex-row">
+            <div
+              className="p-4 bg-[#0cf29e] w-[140px]  sm:w-[240px] text-center text-[22px] sm:text-[32px] text-[#5d43ff] rounded-full"
+              style={{
+                fontFamily: "pextrabold",
+                lineHeight: 1,
+              }}
+            >
+              E-Mail:
+            </div>
+            <div className="w-full pr-10 ">
+              <input
+                className="h-10 m-4 border-b-4 focus:outline-none focus:ring-0 text-[18px] text-center border-gray-900 text-[#4741f2] rounded-sm w-full"
+                type="text"
+                id="email"
+                name="email"
+                defaultValue=""
+                style={{
+                  fontFamily: "pbold",
+                  lineHeight: 1,
+                  letterSpacing: "2px",
+                }}
+              />
+            </div>
+            
+          </div>
+          <div className="mt-8 flex flex-row place-content-center">
+            <button
+              type="button"
+              onClick={() => {
+                guardar();
+              }}
+              class="text-white text-[22px] sm:text-[32px] bg-gradient-to-r from-[#4741f2] to-[#7648d9] focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full px-10 py-3 text-center me-2 mb-2"
+              style={{ fontFamily: "pbold", letterSpacing: "2px" }}
+            >
+              ENVIAR
+            </button>
+          </div>
+          </td>
+        </tr>
+      </table>
+    <div className="hidden sm:flex-row sm:place-content-center place-content-center">
+          <img src={logo} className="w-[60%] ml-16 sm:ml-0" />
 
           <div>
           <div className="mt-4 ml-8 flex flex-row">
