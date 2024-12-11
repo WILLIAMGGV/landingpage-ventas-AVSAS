@@ -7,33 +7,41 @@ import franja2 from "./img/franja2.png";
 
 function App() {
   const guardar = () => {
+    // Obtener los valores de los campos de entrada
     const data = {
       nombre: document.getElementById("nombre").value,
       apellido: document.getElementById("apellido").value,
       telefono: document.getElementById("telefono").value,
       email: document.getElementById("email").value,
     };
-
+  
     console.log(data);
-
+  
+    // Realizar la solicitud POST
     fetch("https://ventab.asistentevirtualsas/enviarcorreo", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
+      method: 'POST',
       body: JSON.stringify(data),
+      headers: {
+        'Content-Type': 'application/json'
+      }
     })
-      .then((response) => response.json())
-      .then((result) => {
-        console.log(result)
-          document.getElementById("gracias").innerHTML = "Gracias por Registrarte..."
-           document.getElementById("gracias2").innerHTML = "Puedes abrir el documento <a class='text-blue-400 cursor-pointer' href='https://docs.google.com/presentation/d/1UjdnzDRvBLJktn4Cx5Q8-6p2jydxQwvPEBNqae1DaVo/edit?usp=drive_web' target='_blanck'> AQUI </a> si no abre automaticamente"
-          window.open("https://docs.google.com/presentation/d/1UjdnzDRvBLJktn4Cx5Q8-6p2jydxQwvPEBNqae1DaVo/edit?usp=drive_web", "_blank");
-   
-      })
-      .catch((error) => {
-        console.log(error);
-      });
+    .then((response) => {
+      // Verificar si la respuesta es exitosa
+      if (!response.ok) {
+        throw new Error('Network response was not ok: ' + response.statusText);
+      }
+      return response.json();
+    })
+    .then((result) => {
+      console.log(result);
+      document.getElementById("gracias").innerHTML = "Gracias por Registrarte...";
+      document.getElementById("gracias2").innerHTML = "Puedes abrir el documento <a class='text-blue-400 cursor-pointer' href='https://docs.google.com/presentation/d/1UjdnzDRvBLJktn4Cx5Q8-6p2jydxQwvPEBNqae1DaVo/edit?usp=drive_web' target='_blank'> AQUI </a> si no abre automáticamente";
+      window.open("https://docs.google.com/presentation/d/1UjdnzDRvBLJktn4Cx5Q8-6p2jydxQwvPEBNqae1DaVo/edit?usp=drive_web", "_blank");
+    })
+    .catch((error) => {
+      console.error('Error:', error);
+      document.getElementById("gracias").innerHTML = "Ocurrió un error. Por favor, intenta nuevamente.";
+    });
   };
 
   return (
