@@ -441,7 +441,7 @@ function App() {
           </div>
 
 
-          <div id="gracias2" className="text-[18px]  text-blue-800 sm:text-[28px] mt-10 flex flex-row place-content-center" style={{fontFamily: 'pextrabold'}}>
+          <div id="gracias2" className="text-[18px] w-[80%] text-blue-800 sm:text-[28px] mt-10 flex flex-row place-content-center" style={{fontFamily: 'pextrabold'}}>
             
             </div>
 
