@@ -16,7 +16,7 @@ function App() {
 
     console.log(data);
 
-    fetch("https://avca.bingoarcoiris.com/enviarcorreo", {
+    fetch("http://localhost:3002/enviarcorreo", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -25,7 +25,7 @@ function App() {
     })
       .then((response) => response.json())
       .then((result) => {
-    
+        console.log(result)
           document.getElementById("gracias").innerHTML = "Gracias por Registrarte..."
            document.getElementById("gracias2").innerHTML = "Puedes abrir el documento <a class='text-blue-400 cursor-pointer' href='https://docs.google.com/presentation/d/1UjdnzDRvBLJktn4Cx5Q8-6p2jydxQwvPEBNqae1DaVo/edit?usp=drive_web' target='_blanck'> AQUI </a> si no abre automaticamente"
           window.open("https://docs.google.com/presentation/d/1UjdnzDRvBLJktn4Cx5Q8-6p2jydxQwvPEBNqae1DaVo/edit?usp=drive_web", "_blank");
@@ -440,21 +440,19 @@ function App() {
             
           </div>
 
-
-          <div id="gracias2" className="text-[18px] w-[80%] text-blue-800 sm:text-[28px] mt-10 flex flex-row place-content-center" style={{fontFamily: 'pextrabold'}}>
+          <div id="gracias2" className="text-[18px] w-[100%] text-blue-800 sm:text-[28px] text-center mt-10" style={{fontFamily: 'pextrabold'}}>
             
             </div>
+          
+          
 
       
               <br />
-      <br />
-      <br />
-      <br />
-      <br />
+      
       
 
     </div>
-
+    
 
   
     </>
