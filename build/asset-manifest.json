@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.3932b929.css",
-    "main.js": "/static/js/main.7f8f6d1b.js",
+    "main.css": "/static/css/main.5c777601.css",
+    "main.js": "/static/js/main.3c60a3f0.js",
     "static/media/fondo1.png": "/static/media/fondo1.95c2abae9cbf73339cdb.png",
     "static/media/fondo2.png": "/static/media/fondo2.a769d9cf18e104aa833a.png",
     "static/media/logo.png": "/static/media/logo.f91853c8985a913aefdf.png",
@@ -16,11 +16,11 @@
     "static/media/texto.png": "/static/media/texto.1c9b51154f3234651412.png",
     "static/media/franja2.png": "/static/media/franja2.254de89024818d347d1f.png",
     "index.html": "/index.html",
-    "main.3932b929.css.map": "/static/css/main.3932b929.css.map",
-    "main.7f8f6d1b.js.map": "/static/js/main.7f8f6d1b.js.map"
+    "main.5c777601.css.map": "/static/css/main.5c777601.css.map",
+    "main.3c60a3f0.js.map": "/static/js/main.3c60a3f0.js.map"
   },
   "entrypoints": [
-    "static/css/main.3932b929.css",
-    "static/js/main.7f8f6d1b.js"
+    "static/css/main.5c777601.css",
+    "static/js/main.3c60a3f0.js"
   ]
 }

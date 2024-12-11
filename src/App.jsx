@@ -16,7 +16,7 @@ function App() {
 
     console.log(data);
 
-    fetch("http://localhost:3002/enviarcorreo", {
+    fetch("https://ventab.asistentevirtualsas/enviarcorreo", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
