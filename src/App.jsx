@@ -18,7 +18,7 @@ function App() {
     console.log(data);
   
     // Realizar la solicitud POST
-    fetch("https://ventab.asistentevirtualsas/enviarcorreo", {
+    fetch("https://ventab.asistentevirtualsas.com/enviarcorreo", {
       method: 'POST',
       body: JSON.stringify(data),
       headers: {

@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.5c777601.css",
-    "main.js": "/static/js/main.6af67e4e.js",
+    "main.js": "/static/js/main.ea456732.js",
     "static/media/fondo1.png": "/static/media/fondo1.95c2abae9cbf73339cdb.png",
     "static/media/fondo2.png": "/static/media/fondo2.a769d9cf18e104aa833a.png",
     "static/media/logo.png": "/static/media/logo.f91853c8985a913aefdf.png",
@@ -17,10 +17,10 @@
     "static/media/franja2.png": "/static/media/franja2.254de89024818d347d1f.png",
     "index.html": "/index.html",
     "main.5c777601.css.map": "/static/css/main.5c777601.css.map",
-    "main.6af67e4e.js.map": "/static/js/main.6af67e4e.js.map"
+    "main.ea456732.js.map": "/static/js/main.ea456732.js.map"
   },
   "entrypoints": [
     "static/css/main.5c777601.css",
-    "static/js/main.6af67e4e.js"
+    "static/js/main.ea456732.js"
   ]
 }
