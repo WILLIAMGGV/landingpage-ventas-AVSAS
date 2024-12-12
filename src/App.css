@@ -68,6 +68,15 @@
   background-repeat: no-repeat; /* Evita que la imagen se repita */
 }
 
+.piedepagina {
+  background-image: url("./img/pie.png");
+  height: 300px;
+  width: 100%;
+  background-size: cover; /* Asegúrate de que la imagen cubra el contenedor */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
 .text-justify {
   text-align: justify;
 }

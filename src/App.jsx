@@ -4,6 +4,11 @@ import titulo2 from "./img/titulo2.png";
 import logo from "./img/logo.png";
 import texto from "./img/texto.png";
 import franja2 from "./img/franja2.png";
+import palabra1 from "./img/palabra1.png"
+import palabra2 from "./img/palabra2.png"
+import hombre from "./img/hombre.png"
+import registrate from "./img/registrate.png"
+import pie from "./img/pie.png"
 
 function App() {
   
@@ -38,8 +43,22 @@ function App() {
       const result = await response.json();
       console.log(result);
       document.getElementById("gracias").innerHTML = "Gracias por Registrarte...";
-      document.getElementById("gracias2").innerHTML = "Puedes abrir el documento <a class='text-blue-400 cursor-pointer' href='https://docs.google.com/presentation/d/1UjdnzDRvBLJktn4Cx5Q8-6p2jydxQwvPEBNqae1DaVo/edit?usp=drive_web' target='_blank'> AQUI </a> si no abre automáticamente";
-      window.open("https://docs.google.com/presentation/d/1UjdnzDRvBLJktn4Cx5Q8-6p2jydxQwvPEBNqae1DaVo/edit?usp=drive_web", "_blank");
+      document.getElementById("gracias2").innerHTML = "Puedes abrir el documento <a class='text-blue-400 cursor-pointer' href='/matriz.pptx' target='_blank'> AQUI </a> si no abre automáticamente";
+      
+      document.getElementById("nombre").value=""
+      document.getElementById("apellido").value=""
+      document.getElementById("telefono").value=""
+      document.getElementById("email").value=""
+
+      const enlace = document.createElement('a');
+    enlace.href = '/matriz.pptx'; // Ruta al archivo en la carpeta public
+    enlace.download = 'matriz.pptx'; // Nombre del archivo que se descargará
+    document.body.appendChild(enlace); // Añadir el enlace al DOM
+    enlace.click(); // Simular un clic en el enlace
+    document.body.removeChild(enlace);
+    
+    
+    
     } catch (error) {
       console.error('Error:', error);
       document.getElementById("gracias").innerHTML = "Ocurrió un error. Por favor, intenta nuevamente. Detalle: " + error.message;
@@ -50,29 +69,36 @@ function App() {
     <div>
     <div className="fondo1 flex flex-row place-content-center" >
       <img src={titulo1} className="sm:w-auto w-[100%]" alt="" />
+      <br />
     </div>
 
-    <div className="fondo2 flex flex-col md:flex-row flex-grow place-content-center">
-            <div className="mt-8">
-              <img src={titulo2} alt="" className="mt-8 sm:w-auto w-[100%]"  />
+    <div className="fondo2">
+
+    <div className="flex flex-row place-content-center">
+      
+              <img src={palabra1} width="50%" alt="" className=" mt-8"  />
             </div>
-            <div className="flex flex-col mt-4">
-              <img src={texto} alt="" className="sm:w-auto w-[100%]" />
+
+            <div className="flex flex-row place-content-center">
+              <img src={palabra2} alt="" width="95%"  />
             </div>
+
+
+       
     </div>
 
-    <div className="mt-[80px] sm:mt-[-100px]">
-    <img src={franja2} className="w-full" alt="" />
-    </div>
+  
+    <div className="fondo3">
 
-    </div>
+<div className="flex flex-row place-content-center mt-[350px]">
+          <img src={hombre} alt=""  />
+        </div>
 
-    <div>
-
-
-    <div className="flex flex-row place-content-center mt-16">
-
-      <table className="hidden sm:block " width="80%">
+        <div className="flex flex-row place-content-center">
+          <img src={registrate} width="90%" alt=""  />
+        </div>
+      
+        <table className="hidden sm:block " width="80%" align="center">
         <tr>
           <td valign="top">
             <br />
@@ -82,7 +108,7 @@ function App() {
           <td valign="top">
           <div className="mt-4 ml-8 flex flex-row">
             <div
-              className="p-4 bg-[#0cf29e] w-[140px]  sm:w-[240px] text-center text-[22px] sm:text-[32px] text-[#5d43ff] rounded-full"
+              className="p-4 bg-[#000033] w-[140px]  sm:w-[240px] text-center text-[22px] sm:text-[32px] text-[#00ff99] rounded-full"
               style={{
                 fontFamily: "pextrabold",
                 lineHeight: 1,
@@ -107,7 +133,7 @@ function App() {
           </div>
           <div className="mt-4 ml-8 flex flex-row">
             <div
-              className="p-4 bg-[#0cf29e] w-[140px]  sm:w-[240px] text-center text-[22px] sm:text-[32px] text-[#5d43ff] rounded-full"
+              className="p-4 bg-[#000033] w-[140px]  sm:w-[240px] text-center text-[22px] sm:text-[32px] text-[#00ff99] rounded-full"
               style={{
                 fontFamily: "pextrabold",
                 lineHeight: 1,
@@ -132,7 +158,7 @@ function App() {
           </div>
           <div className="mt-4 ml-8 flex flex-row">
             <div
-              className="p-4 bg-[#0cf29e] w-[140px]  sm:w-[240px] text-center text-[22px] sm:text-[32px] text-[#5d43ff] rounded-full"
+              className="p-4 bg-[#000033] w-[140px]  sm:w-[240px] text-center text-[22px] sm:text-[32px] text-[#00ff99] rounded-full"
               style={{
                 fontFamily: "pextrabold",
                 lineHeight: 1,
@@ -157,7 +183,7 @@ function App() {
           </div>
           <div className="mt-4 ml-8 flex flex-row">
             <div
-              className="p-4 bg-[#0cf29e] w-[140px]  sm:w-[240px] text-center text-[22px] sm:text-[32px] text-[#5d43ff] rounded-full"
+              className="p-4 bg-[#000033] w-[140px]  sm:w-[240px] text-center text-[22px] sm:text-[32px] text-[#00ff99] rounded-full"
               style={{
                 fontFamily: "pextrabold",
                 lineHeight: 1,
@@ -187,8 +213,8 @@ function App() {
               onClick={() => {
                 guardar();
               }}
-              class="text-white text-[22px] sm:text-[32px] bg-gradient-to-r from-[#4741f2] to-[#7648d9] focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full px-10 py-3 text-center me-2 mb-2"
-              style={{ fontFamily: "pbold", letterSpacing: "2px" }}
+              class="text-[#000033] text-[22px] sm:text-[32px] bg-[#00ff99] focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full px-10 py-3 text-center me-2 mb-2"
+              style={{ fontFamily: "pextrabold", letterSpacing: "2px" }}
             >
               ENVIAR
             </button>
@@ -196,6 +222,17 @@ function App() {
           </td>
         </tr>
       </table>
+   
+</div>
+
+    </div>
+
+    <div>
+
+
+    <div className="hidden place-content-center mt-16">
+
+     
 
               <table className="sm:hidden block" width="100%">
                <tr>
@@ -458,7 +495,10 @@ function App() {
       
               <br />
       
-      
+      <div className="piedepagina">
+
+        <div style={{ fontFamily: "pextrabold", letterSpacing: "6px", color: 'white' }} className=" pt-[150px] text-[32px] flex flex-row place-content-center items-center justify-center">01.ASISTENTEVIRTUALSAS.COM</div>
+      </div>
 
     </div>
     
