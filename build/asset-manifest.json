@@ -1,7 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.5c777601.css",
-    "main.js": "/static/js/main.434a9e0d.js",
+    "main.css": "/static/css/main.766e3560.css",
+    "main.js": "/static/js/main.5fff43d0.js",
+    "static/media/hombre.png": "/static/media/hombre.2bca22fbfd43c249324d.png",
+    "static/media/titulo1.png": "/static/media/titulo1.fd063ab7218551a340bb.png",
+    "static/media/palabra2.png": "/static/media/palabra2.82f3101f0ee7289350ce.png",
+    "static/media/registrate.png": "/static/media/registrate.38b61cc658fcc69d0a75.png",
     "static/media/fondo1.png": "/static/media/fondo1.95c2abae9cbf73339cdb.png",
     "static/media/fondo2.png": "/static/media/fondo2.a769d9cf18e104aa833a.png",
     "static/media/logo.png": "/static/media/logo.f91853c8985a913aefdf.png",
@@ -12,15 +16,16 @@
     "static/media/Pangram-Medium.otf": "/static/media/Pangram-Medium.a8580b7adf5a606cfe9e.otf",
     "static/media/Pangram-ExtraLight.otf": "/static/media/Pangram-ExtraLight.e485fe7b8a04842e0d7e.otf",
     "static/media/Pangram-Regular.otf": "/static/media/Pangram-Regular.6ca45f20a715dc9973b6.otf",
-    "static/media/titulo1.png": "/static/media/titulo1.ab7de69dfe1261068e8c.png",
     "static/media/texto.png": "/static/media/texto.1c9b51154f3234651412.png",
     "static/media/franja2.png": "/static/media/franja2.254de89024818d347d1f.png",
+    "static/media/pie.png": "/static/media/pie.5d20e02e95815208fbba.png",
+    "static/media/palabra1.png": "/static/media/palabra1.2950946eba75740bdf3d.png",
     "index.html": "/index.html",
-    "main.5c777601.css.map": "/static/css/main.5c777601.css.map",
-    "main.434a9e0d.js.map": "/static/js/main.434a9e0d.js.map"
+    "main.766e3560.css.map": "/static/css/main.766e3560.css.map",
+    "main.5fff43d0.js.map": "/static/js/main.5fff43d0.js.map"
   },
   "entrypoints": [
-    "static/css/main.5c777601.css",
-    "static/js/main.434a9e0d.js"
+    "static/css/main.766e3560.css",
+    "static/js/main.5fff43d0.js"
   ]
 }
