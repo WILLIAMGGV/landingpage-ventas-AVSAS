@@ -16,9 +16,10 @@ function App() {
     };
   
     console.log(data);
+    console.log(process.env.REACT_APP_API_URL)
   
     // Realizar la solicitud POST
-    fetch("https://ventab.asistentevirtualsas.com/enviarcorreo", {
+    fetch(`${process.env.REACT_APP_API_URL}/enviarcorreo`, {
       method: 'POST',
       body: JSON.stringify(data),
       headers: {
