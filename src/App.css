@@ -53,15 +53,41 @@
 
 .fondo1 {
   background-image: url("./img/fondo1.png");
-  height: 300px;
+  height: 200px; /* Altura para móviles */
   background-size: cover; /* Asegúrate de que la imagen cubra el contenedor */
   background-position: center; /* Centra la imagen */
   background-repeat: no-repeat; /* Evita que la imagen se repita */
 }
 
+/* Estilos para pantallas más grandes (PC) */
+@media (min-width: 640px) {
+  /* Cambia 640px por el tamaño que desees */
+  .fondo1 {
+    background-image: url("./img/fondo1.png"); /* Cambia la imagen para PC */
+    height: 300px; /* Altura para pantallas más grandes */
+  }
+}
+
 .fondo2 {
   background-image: url("./img/fondo2.png");
-  height: 500px;
+  height: 300px;
+  width: 100%;
+  background-size: cover; /* Asegúrate de que la imagen cubra el contenedor */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+@media (min-width: 640px) {
+  /* Cambia 640px por el tamaño que desees */
+  .fondo2 {
+    background-image: url("./img/fondo2.png"); /* Cambia la imagen para PC */
+    height: 500px; /* Altura para pantallas más grandes */
+  }
+}
+
+.fondo22 {
+  background-image: url("./img/fondo2.png");
+  height: 350px;
   width: 100%;
   background-size: cover; /* Asegúrate de que la imagen cubra el contenedor */
   background-position: center; /* Centra la imagen */
