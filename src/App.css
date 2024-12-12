@@ -96,11 +96,19 @@
 
 .piedepagina {
   background-image: url("./img/pie.png");
-  height: 300px;
+  height: 100px;
   width: 100%;
   background-size: cover; /* Asegúrate de que la imagen cubra el contenedor */
   background-position: center; /* Centra la imagen */
   background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+@media (min-width: 640px) {
+  /* Cambia 640px por el tamaño que desees */
+  .piedepagina {
+    background-image: url("./img/pie.png"); /* Cambia la imagen para PC */
+    height: 300px; /* Altura para pantallas más grandes */
+  }
 }
 
 .text-justify {
