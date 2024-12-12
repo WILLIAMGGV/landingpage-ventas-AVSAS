@@ -6,7 +6,9 @@ import texto from "./img/texto.png";
 import franja2 from "./img/franja2.png";
 
 function App() {
-  const guardar = () => {
+  
+  
+  const guardar = async () => {
     // Obtener los valores de los campos de entrada
     const data = {
       nombre: document.getElementById("nombre").value,
@@ -16,35 +18,33 @@ function App() {
     };
   
     console.log(data);
-    console.log(process.env.REACT_APP_API_URL)
+    console.log(process.env.REACT_APP_API_URL);
   
-    // Realizar la solicitud POST
-    fetch(`${process.env.REACT_APP_API_URL}/enviarcorreo`, {
-      method: 'POST',
-      body: JSON.stringify(data),
-      headers: {
-        'Content-Type': 'application/json'
-      }
-    })
-    .then((response) => {
+    try {
+      // Realizar la solicitud POST
+      const response = await fetch(`${process.env.REACT_APP_API_URL}/enviarcorreo`, {
+        method: 'POST',
+        body: JSON.stringify(data),
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      });
+  
       // Verificar si la respuesta es exitosa
       if (!response.ok) {
         throw new Error('Network response was not ok: ' + response.statusText);
       }
-      return response.json();
-    })
-    .then((result) => {
+  
+      const result = await response.json();
       console.log(result);
       document.getElementById("gracias").innerHTML = "Gracias por Registrarte...";
       document.getElementById("gracias2").innerHTML = "Puedes abrir el documento <a class='text-blue-400 cursor-pointer' href='https://docs.google.com/presentation/d/1UjdnzDRvBLJktn4Cx5Q8-6p2jydxQwvPEBNqae1DaVo/edit?usp=drive_web' target='_blank'> AQUI </a> si no abre automáticamente";
       window.open("https://docs.google.com/presentation/d/1UjdnzDRvBLJktn4Cx5Q8-6p2jydxQwvPEBNqae1DaVo/edit?usp=drive_web", "_blank");
-    })
-    .catch((error) => {
+    } catch (error) {
       console.error('Error:', error);
-      document.getElementById("gracias").innerHTML = "Ocurrió un error. Por favor, intenta nuevamente.";
-    });
+      document.getElementById("gracias").innerHTML = "Ocurrió un error. Por favor, intenta nuevamente. Detalle: " + error.message;
+    }
   };
-
   return (
     <>
     <div>
